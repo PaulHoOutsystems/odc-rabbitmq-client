@@ -74,19 +74,19 @@ To receive a message, you will need to supply the right configuration values. Th
 
 This library is capable to integrate with ODC private gateway. This allows your ODC application to send/receive messages to a RabbitMQ server instance that is on-premise. 
 
-An example of a outsystems cloud connector string is 
+An example of an outsystems cloud connector string is 
 
 ```
 ./outsystemscc --header "token:<REPLACE WITH YOUR TOKEN SUPPLIED BY ODC ADMIN>" <REPLACE WITH YOUR SECURE GATEWAY URL SUPPLIED BY ODC ADMIN> R:<ODC PORT TO COMMUNICATE>:<HOSTNAME OR IP OF RABBITMQ SERVER>:<PORT OF RABBITMQ SERVER>
 ```
 
-example (with confidential information replcaed):
+example (with confidential information replaced):
 
 ```
 ./outsystemscc --header "token:_my_secret_token_" https://some-value.outsystems.app/some-other-values-here R:5001:172.20.80.129:5672
 ```
 
-It is important to supply the same port number (5001) for what you have supplied in outsystemcc and set it to the _RABBITMQ_PORT_ in ODC portal. The _RABBITMQ_HOST_ value *must* be _secure_gateway_ (all in small caps). 
+It is important to supply the same port number (5001) for what you have supplied in outsystemcc and set it to the _RABBITMQ_PORT_ in ODC portal. The _RABBITMQ_HOST_ value *must* be _secure-gateway_ (all in small caps). 
 
 ![Advance use with ODC private gateway](doc/images/settings_for_odc_private_gateway.png)
 
