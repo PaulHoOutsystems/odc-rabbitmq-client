@@ -51,14 +51,14 @@ The _RabbitMQ Client (Black Belt Edition)_ library requires a few settings to be
 | 2. | RABBITMQ_PASS | The password to connect to the rabbit MQ server |
 | 3. | RABBITMQ_PORT | The port number to connect to the rabbit MQ server (default value: 5672)|
 | 4. | RABBITMQ_USER | The username to connect to the rabbit MQ server |
-| 5. | RABBITMQ_VHOST | The virutal host to connect to |
+| 5. | RABBITMQ_VHOST | The virtual host to connect to |
   
 
 ![Change settings](doc/images/settings.png) 
 
 ### Example 1: Send a message
 
-To receive a message, you will need to supply the right configuration values. The screenshot below gives an example. Not all values are mandatory as you can see. It is recommended to have a client action (in the demo application, it is set up in GetMQConfigInfo client action) that supplies standard values across the application and override values when applicable. 
+To send a message, you will need to supply the right configuration values. The screenshot below gives an example. Not all values are mandatory as you can see. It is recommended to have a client action (in the demo application, it is set up in GetMQConfigInfo client action) that supplies standard values across the application and override values when applicable. 
 
 ![send message example](doc/images/send_message_example.png)
 
